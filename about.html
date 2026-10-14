@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Waled - Software Engineer</title>
+  <meta name="description" content="Read about Waled's engineering background, career history, approach to building software, and personal interests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        Waled<span class="dot">.</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Get in touch</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="section-header">
+      <span class="section-label">Background & Journey</span>
+      <h1 class="section-title">About Me</h1>
+      <p class="section-subtitle">A candid look into my journey as an engineer, how I approach software, and what keeps me excited about the craft.</p>
+    </div>
+
+    <!-- About Grid -->
+    <div class="about-grid">
+      <!-- Profile Card & Bio -->
+      <div class="about-summary">
+        <div style="display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.8rem;">
+          <img src="assets/images/profile.jpg" alt="Waled portrait" style="width: 76px; height: 76px; border-radius: var(--radius-sm); object-fit: cover; border: 1px solid var(--border-subtle);">
+          <div>
+            <h2 style="font-size: 1.3rem; margin-bottom: 0.2rem;">Waled</h2>
+            <p style="color: var(--accent); font-weight: 600; font-size: 0.92rem;">Full-Stack Software Engineer</p>
+          </div>
+        </div>
+
+        <p class="about-text">
+          I'm a full-stack developer with over 4 years of hands-on experience building web platforms, internal tools, and customer-facing software. I started my coding journey curious about how systems worked beneath the browser, which quickly grew into an obsession with creating fast, accessible, and resilient applications.
+        </p>
+        <p class="about-text">
+          In my work, I prioritize pragmatism over hype. I believe good engineering means picking reliable tools, writing code that colleagues can easily maintain, and focusing relentlessly on real user needs.
+        </p>
+        <p class="about-text">
+          When I step away from the keyboard, I enjoy exploring open-source projects, reading engineering blogs, and experimenting with home lab automation.
+        </p>
+
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="info-title">Focus</span>
+            <span class="info-value">Full-Stack (TS, React, Node)</span>
+          </li>
+          <li class="info-item">
+            <span class="info-title">Location</span>
+            <span class="info-value">Remote Worldwide</span>
+          </li>
+          <li class="info-item">
+            <span class="info-title">Status</span>
+            <span class="info-value" style="color: #10b981;"><i class="fa-solid fa-circle" style="font-size: 0.55rem; vertical-align: middle;"></i> Available for roles</span>
+          </li>
+          <li class="info-item">
+            <span class="info-title">Degree</span>
+            <span class="info-value">B.S. in Computer Science</span>
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 0.8rem; margin-top: 2rem;">
+          <a href="contact.html" class="btn btn-primary" style="flex: 1;">
+            <i class="fa-regular fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="projects.html" class="btn btn-secondary" style="flex: 1;">
+            <i class="fa-solid fa-folder-open"></i> Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- Professional Experience Timeline -->
+      <div>
+        <h2 style="font-size: 1.35rem; margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.6rem;">
+          <i class="fa-solid fa-briefcase" style="color: var(--accent);"></i> Career Timeline
+        </h2>
+
+        <div class="timeline">
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 - Present</span>
+              <h3 class="timeline-title">Senior Full-Stack Engineer</h3>
+              <p class="timeline-org">CloudScale Solutions</p>
+              <p class="timeline-desc">
+                Architecting core customer dashboards and backend telemetry services. Led a multi-month effort to modernize our frontend component architecture, reducing bundle size by 38% and significantly increasing test coverage. Mentored junior engineers and led bi-weekly technical design reviews.
+              </p>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 - 2023</span>
+              <h3 class="timeline-title">Software Developer</h3>
+              <p class="timeline-org">Apex Digital Labs</p>
+              <p class="timeline-desc">
+                Developed client-facing web applications, payment integrations (Stripe, PayPal), and RESTful APIs using Node.js, Express, and PostgreSQL. Collaborated closely with product designers to implement responsive, accessible UI components.
+              </p>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 - 2021</span>
+              <h3 class="timeline-title">Junior Web Developer</h3>
+              <p class="timeline-org">Freelance & Contract</p>
+              <p class="timeline-desc">
+                Built and deployed custom websites and web portals for small businesses and independent clients. Focused on clean semantic HTML, mobile responsiveness, and search engine optimization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Principles -->
+        <h2 style="font-size: 1.35rem; margin: 2.5rem 0 1.2rem; display: flex; align-items: center; gap: 0.6rem;">
+          <i class="fa-solid fa-compass" style="color: var(--accent-warm);"></i> Engineering Principles
+        </h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="skill-category-card" style="padding: 1.4rem;">
+            <h4 style="font-size: 1rem; margin-bottom: 0.4rem; color: var(--text-main);"><i class="fa-solid fa-code-commit" style="color: var(--accent); margin-right: 0.4rem;"></i> Thoughtful Architecture</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.55;">
+              I write modular, self-documenting code with tests so that systems can scale predictably.
+            </p>
+          </div>
+          <div class="skill-category-card" style="padding: 1.4rem;">
+            <h4 style="font-size: 1rem; margin-bottom: 0.4rem; color: var(--text-main);"><i class="fa-solid fa-people-arrows" style="color: var(--accent); margin-right: 0.4rem;"></i> Honest Communication</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.55;">
+              Clear project updates, constructive PR reviews, and open discussions about trade-offs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 <strong>Waled</strong> &bull; Built with clean HTML, CSS & JavaScript.
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

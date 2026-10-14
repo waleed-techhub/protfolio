@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waled | Software Engineer</title>
+  <meta name="description" content="Personal website of Waled, a software engineer building clean web applications, performant backends, and reliable software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        Waleed<span class="dot">.</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Get in touch</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open to full-time roles & projects</span>
+        </div>
+        <h1>Hey, I'm Waled.</h1>
+        <div class="hero-role">
+          <span id="typing-text">Full-Stack Software Engineer</span>
+        </div>
+        <p class="hero-description">
+          I build practical web applications, design clean client interfaces, and architect robust backend systems. Based on engineering fundamentals, performance, and attention to detail.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="projects.html" class="btn btn-primary">
+            <span>View selected work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="about.html" class="btn btn-secondary">
+            <span>More about me</span>
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="mailto:waled.dev@example.com" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="assets/images/profile.jpg" alt="Waled portrait" class="portrait-img">
+          <div class="portrait-note">
+            <i class="fa-solid fa-terminal" style="color: var(--accent);"></i>
+            <span>TypeScript &bull; React &bull; Node.js</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Stats Strip -->
+    <section class="stats-strip">
+      <div class="stat-item">
+        <span class="stat-number">4+</span>
+        <span class="stat-label">Years of engineering experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">25+</span>
+        <span class="stat-label">Delivered software projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Production uptime commitment</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Collaborative & client focused</span>
+      </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section style="margin-bottom: 5rem;">
+      <div class="section-header">
+        <span class="section-label">Engineering Focus</span>
+        <h2 class="section-title">What I do best</h2>
+        <p class="section-subtitle">A balanced engineering foundation combining front-of-the-glass finesse with reliable back-of-the-box infrastructure.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="skill-category-card">
+          <div class="category-icon" style="margin-bottom: 1.2rem;">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.6rem;">Frontend Engineering</h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Building responsive and accessible interfaces with semantic HTML, modern CSS, TypeScript, and React. Focused on fast load times and clean component design.
+          </p>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="category-icon" style="margin-bottom: 1.2rem;">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.6rem;">Backend & APIs</h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Designing scalable RESTful endpoints, database schemas with PostgreSQL and MongoDB, handling authentication, and orchestrating microservices in Node.js and Python.
+          </p>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="category-icon" style="margin-bottom: 1.2rem;">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.6rem;">Reliability & Testing</h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+            Writing unit and integration tests with Jest, containerizing with Docker, and establishing frictionless CI/CD deployment pipelines on Vercel and AWS.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Teaser -->
+    <section style="margin-bottom: 5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title" style="margin-bottom: 0.3rem;">Selected Work</h2>
+          <p style="color: var(--text-muted);">A few projects highlighting recent work and practical challenges solved.</p>
+        </div>
+        <a href="projects.html" class="btn btn-secondary">All projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Project Card 1 -->
+        <article class="project-card">
+          <div class="project-header-preview">
+            <div class="preview-pill">
+              <i class="fa-solid fa-chart-line" style="color: #38bdf8;"></i> live_metrics_feed.ts
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">Full-Stack Platform</span>
+            <h3 class="project-title">PulseSync — Telemetry & Monitoring</h3>
+            <p class="project-desc">A real-time metrics monitoring hub using WebSockets and PostgreSQL, built to provide live infrastructure stats under 50ms latency.</p>
+            <div class="project-tags">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">WebSockets</span>
+            </div>
+            <div class="project-footer">
+              <a href="projects.html" class="project-link">Read details <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card">
+          <div class="project-header-preview">
+            <div class="preview-pill">
+              <i class="fa-solid fa-credit-card" style="color: #34d399;"></i> payment_gateway.ts
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">Fintech Infrastructure</span>
+            <h3 class="project-title">PayFlow — Invoicing & Billing Engine</h3>
+            <p class="project-desc">Automated recurring billing gateway handling Stripe and PayPal webhooks with idempotency safeguards and instant invoice PDFs.</p>
+            <div class="project-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-footer">
+              <a href="projects.html" class="project-link">Read details <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Warm Contact CTA -->
+    <section style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 3rem 2rem; text-align: center;">
+      <h2 style="font-size: 1.8rem; margin-bottom: 0.6rem;">Interested in collaborating?</h2>
+      <p style="color: var(--text-muted); max-width: 520px; margin: 0 auto 2rem; font-size: 0.98rem; line-height: 1.6;">
+        I'm always open to discussing new engineering roles, contract work, or discussing ideas. Feel free to reach out anytime.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> Send a message</a>
+        <a href="about.html" class="btn btn-secondary">Learn more about me</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 <strong>Waled</strong> &bull; Built with clean HTML, CSS & JavaScript.
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

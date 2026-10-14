@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries | Waled - Software Engineer</title>
+  <meta name="description" content="Get in touch with Waled for software engineering roles, technical consulting, and freelance development projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="code-tag">Waled</span><span class="dot">.</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem;">Get in touch</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="section-header">
+      <span class="badge">Let's Connect</span>
+      <h1 class="section-title">Get in Touch</h1>
+      <p class="section-subtitle">Whether you have an upcoming project, an engineering opening, or just want to discuss modern web technologies — my inbox is always open.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Details -->
+      <div class="contact-info-panel">
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="contact-detail">
+            <h4>Email</h4>
+            <a href="mailto:waled.dev@example.com">waled.dev@example.com</a>
+          </div>
+          <button class="copy-btn" data-copy="waled.dev@example.com" title="Copy email address" aria-label="Copy Email">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon" style="color: #10b981; background: rgba(16, 185, 129, 0.15);">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-detail">
+            <h4>Current Location</h4>
+            <p>Remote Worldwide / Available for Relocation</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon" style="color: #f59e0b; background: rgba(245, 158, 11, 0.15);">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="contact-detail">
+            <h4>Response Time</h4>
+            <p>Typically replies within 12–24 hours</p>
+          </div>
+        </div>
+
+        <!-- Social Channels -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem;">
+          <h4 style="margin-bottom: 0.8rem; font-size: 1rem;">Professional Profiles</h4>
+          <div style="display: flex; gap: 0.8rem;">
+            <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick FAQ -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem;">
+          <h4 style="margin-bottom: 0.6rem; font-size: 1rem;"><i class="fa-regular fa-circle-question" style="color: var(--accent-cyan); margin-right: 0.4rem;"></i> Common Questions</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.8rem;">
+            <strong>Availability:</strong> Full-time positions, contractor arrangements, and selective freelance consulting.
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            <strong>Time Zone:</strong> Flexible crossover hours with US, European, and Asian business hours.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-panel">
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.4rem;">Send a Direct Message</h3>
+        <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.8rem;">Fill out the details below and I'll get back to you as soon as possible.</p>
+
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" class="form-control" placeholder="jane@company.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Project Type / Inquiry Topic</label>
+            <select id="subject" class="form-control">
+              <option value="Full-Stack Web App">Full-Stack Web Application</option>
+              <option value="Frontend Development">Frontend Development & Architecture</option>
+              <option value="Backend API / Systems">Backend API & Database Architecture</option>
+              <option value="Contract / Full-time Role">Job Opportunity (Full-time / Contract)</option>
+              <option value="General Question">General Inquiry / Coffee Chat</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" class="form-control" placeholder="Tell me about your project, timeline, or requirements..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+            <i class="fa-regular fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 <strong>Waled</strong>. Handcrafted with modern HTML, CSS & JavaScript.
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

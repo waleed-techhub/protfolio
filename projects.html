@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Work | Waled - Software Engineer</title>
+  <meta name="description" content="Selected engineering projects and client work by Waled, featuring full-stack applications, distributed systems, and modern web interfaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="code-tag">Waled</span><span class="dot">.</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem;">Get in touch</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="section-header">
+      <span class="badge">Featured Work</span>
+      <h1 class="section-title">Selected Projects</h1>
+      <p class="section-subtitle">Real-world applications, tools, and systems I've designed and built with an emphasis on reliability, clean code, and great user experience.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="skills-filter">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+      <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="cards-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card" data-category="fullstack">
+        <div class="project-thumbnail">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #1e1b4b, #0f172a);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #818cf8; background: rgba(0,0,0,0.4); padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fa-solid fa-chart-line" style="margin-right: 0.5rem; color: #38bdf8;"></i> live_metrics_feed.ts
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn btn-secondary" onclick="openProjectModal('PulseSync - Cloud Telemetry & Metrics Platform', 'PulseSync is a real-time system monitoring platform handling streaming metrics from distributed servers. Features live WebSockets data feeds, custom metric alert thresholds, and configurable dashboard widgets. Decreased incident diagnosis time by 35% for the client.', ['TypeScript', 'Node.js', 'PostgreSQL', 'WebSockets', 'Chart.js', 'Docker'], 'https://github.com', 'https://example.com')">
+              <i class="fa-solid fa-expand"></i> Case Study
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">PulseSync — Cloud Telemetry Hub</h2>
+          <p class="project-desc">Real-time infrastructure monitoring platform with sub-second WebSocket telemetry, latency alerting, and customizable dashboards.</p>
+          <div class="project-tags">
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">WebSockets</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="project-footer">
+            <button class="project-link" style="background:none; border:none; cursor:pointer;" onclick="openProjectModal('PulseSync - Cloud Telemetry & Metrics Platform', 'PulseSync is a real-time system monitoring platform handling streaming metrics from distributed servers. Features live WebSockets data feeds, custom metric alert thresholds, and configurable dashboard widgets.', ['TypeScript', 'Node.js', 'PostgreSQL', 'WebSockets', 'Chart.js'], 'https://github.com', 'https://example.com')">
+              Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub Code"><i class="fa-brands fa-github"></i></a>
+              <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" data-category="fullstack backend">
+        <div class="project-thumbnail">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #064e3b, #0f172a);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #34d399; background: rgba(0,0,0,0.4); padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fa-solid fa-credit-card" style="margin-right: 0.5rem; color: #10b981;"></i> payment_gateway.ts
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn btn-secondary" onclick="openProjectModal('PayFlow - Merchant Billing & Invoicing Engine', 'Engineered an automated invoicing and recurring billing gateway supporting Stripe and PayPal webhooks. Implemented robust idempotency handling, automated PDF invoice dispatch, and tax calculation compliance.', ['Node.js', 'Express', 'Stripe API', 'PostgreSQL', 'Redis', 'Jest'], 'https://github.com', 'https://example.com')">
+              <i class="fa-solid fa-expand"></i> Case Study
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">PayFlow — Billing & Invoicing Engine</h2>
+          <p class="project-desc">Merchant payment infrastructure supporting multi-currency billing, webhook idempotency, and automated tax compliant invoices.</p>
+          <div class="project-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Stripe API</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="project-footer">
+            <button class="project-link" style="background:none; border:none; cursor:pointer;" onclick="openProjectModal('PayFlow - Merchant Billing & Invoicing Engine', 'Engineered an automated invoicing and recurring billing gateway supporting Stripe and PayPal webhooks. Implemented robust idempotency handling, automated PDF invoice dispatch, and tax calculation compliance.', ['Node.js', 'Express', 'Stripe API', 'PostgreSQL', 'Redis'], 'https://github.com', 'https://example.com')">
+              Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub Code"><i class="fa-brands fa-github"></i></a>
+              <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card" data-category="frontend">
+        <div class="project-thumbnail">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #312e81, #1e1b4b);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #a5b4fc; background: rgba(0,0,0,0.4); padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fa-solid fa-pen-nib" style="margin-right: 0.5rem; color: #818cf8;"></i> canvas_workspace.jsx
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn btn-secondary" onclick="openProjectModal('DevCanvas - Collaborative Markdown & Diagram Suite', 'An in-browser technical documentation editor with live split-screen preview, KaTeX math rendering, and sequence diagram generators. Built with high-performance virtualized rendering for 50k+ word documents.', ['React', 'TypeScript', 'TailwindCSS', 'Web Workers', 'Vite'], 'https://github.com', 'https://example.com')">
+              <i class="fa-solid fa-expand"></i> Case Study
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">DevCanvas — Technical Doc Suite</h2>
+          <p class="project-desc">A browser-based technical writing app featuring live Markdown preview, interactive sequence diagrams, and instant export.</p>
+          <div class="project-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Vite</span>
+            <span class="tech-tag">Web Workers</span>
+          </div>
+          <div class="project-footer">
+            <button class="project-link" style="background:none; border:none; cursor:pointer;" onclick="openProjectModal('DevCanvas - Collaborative Markdown & Diagram Suite', 'An in-browser technical documentation editor with live split-screen preview, KaTeX math rendering, and sequence diagram generators.', ['React', 'TypeScript', 'TailwindCSS', 'Web Workers'], 'https://github.com', 'https://example.com')">
+              Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub Code"><i class="fa-brands fa-github"></i></a>
+              <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card" data-category="fullstack">
+        <div class="project-thumbnail">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #164e63, #0f172a);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #67e8f9; background: rgba(0,0,0,0.4); padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fa-solid fa-list-check" style="margin-right: 0.5rem; color: #06b6d4;"></i> sprint_manager.ts
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn btn-secondary" onclick="openProjectModal('TaskFlow - Agile Team Productivity Hub', 'Comprehensive team task manager featuring drag-and-drop Kanban boards, sprint estimation, automated GitHub PR linkage, and team velocity burndown charts.', ['React', 'Node.js', 'Express', 'MongoDB', 'Docker'], 'https://github.com', 'https://example.com')">
+              <i class="fa-solid fa-expand"></i> Case Study
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">TaskFlow — Team Sprint Manager</h2>
+          <p class="project-desc">Agile project management tool with drag-and-drop boards, GitHub pull request tracking, and automated burndown charts.</p>
+          <div class="project-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="project-footer">
+            <button class="project-link" style="background:none; border:none; cursor:pointer;" onclick="openProjectModal('TaskFlow - Agile Team Productivity Hub', 'Comprehensive team task manager featuring drag-and-drop Kanban boards, sprint estimation, automated GitHub PR linkage, and team velocity burndown charts.', ['React', 'Node.js', 'Express', 'MongoDB'], 'https://github.com', 'https://example.com')">
+              Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub Code"><i class="fa-brands fa-github"></i></a>
+              <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card" data-category="frontend">
+        <div class="project-thumbnail">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #701a75, #0f172a);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #f472b6; background: rgba(0,0,0,0.4); padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fa-solid fa-bag-shopping" style="margin-right: 0.5rem; color: #ec4899;"></i> store_catalog.html
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn btn-secondary" onclick="openProjectModal('ShopSphere - Modern E-Commerce Storefront', 'High-converting headless storefront built with Next.js, featuring instantaneous client-side navigation, Algolia-powered instant search, and optimized core web vitals (99+ score on mobile).', ['Next.js', 'React', 'CSS Modules', 'Stripe', 'Algolia'], 'https://github.com', 'https://example.com')">
+              <i class="fa-solid fa-expand"></i> Case Study
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">ShopSphere — Headless Storefront</h2>
+          <p class="project-desc">Fast e-commerce storefront with instant client filtering, mobile-first drawer navigation, and seamless checkout integrations.</p>
+          <div class="project-tags">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Stripe</span>
+          </div>
+          <div class="project-footer">
+            <button class="project-link" style="background:none; border:none; cursor:pointer;" onclick="openProjectModal('ShopSphere - Modern E-Commerce Storefront', 'High-converting headless storefront built with Next.js, featuring instantaneous client-side navigation and optimized core web vitals.', ['Next.js', 'React', 'CSS Modules', 'Stripe'], 'https://github.com', 'https://example.com')">
+              Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub Code"><i class="fa-brands fa-github"></i></a>
+              <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card" data-category="backend">
+        <div class="project-thumbnail">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #3730a3, #0f172a);">
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #c7d2fe; background: rgba(0,0,0,0.4); padding: 0.6rem 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fa-solid fa-network-wired" style="margin-right: 0.5rem; color: #818cf8;"></i> search_service.py
+            </div>
+          </div>
+          <div class="project-overlay">
+            <button class="btn btn-secondary" onclick="openProjectModal('DocuQuery - Semantic Document Search API', 'Fast document indexing microservice using Python and PostgreSQL pgvector. Handles parallel ingestion of PDF/DOCX files, text chunking, and semantic similarity search with average response times under 45ms.', ['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Redis'], 'https://github.com', 'https://example.com')">
+              <i class="fa-solid fa-expand"></i> Case Study
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">DocuQuery — Document Search API</h2>
+          <p class="project-desc">High-throughput search microservice with semantic text chunking, vector indexing, and caching for sub-50ms query responses.</p>
+          <div class="project-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div class="project-footer">
+            <button class="project-link" style="background:none; border:none; cursor:pointer;" onclick="openProjectModal('DocuQuery - Semantic Document Search API', 'Fast document indexing microservice using Python and PostgreSQL pgvector. Handles parallel ingestion of PDF/DOCX files and semantic similarity search.', ['Python', 'FastAPI', 'PostgreSQL', 'Docker'], 'https://github.com', 'https://example.com')">
+              Details <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div style="display: flex; gap: 0.8rem;">
+              <a href="https://github.com" target="_blank" class="project-link" aria-label="GitHub Code"><i class="fa-brands fa-github"></i></a>
+              <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 <strong>Waled</strong>. Handcrafted with modern HTML, CSS & JavaScript.
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
